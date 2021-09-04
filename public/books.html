@@ -1,12 +1,4 @@
-<!--One page includes a table of books. 
-    Table MUST have at the following columns 
-    (title, author(s), year published, publisher, page count, MSRP) 
-    and at four to eight rows of data.-->
-<!--On the same page as your table of data, include a `<form>`suitable 
-    for adding rows to the table. (It doesn't need to *do* anything yet.) 
-    Include one input element for each column in the table. Use the appropriate input type. 
-    Format the form using an appropriate Bootstrap recipe.-->
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
       <head>
         <!-- Required meta tags -->
@@ -34,7 +26,7 @@
               </div>
             </nav>        
             <div class="text-box">  <!-- class was "text box"-->
-                <h1>Books recs</h1>
+                <h1>Book recs</h1>
                 <!-- <p>This site is a submission for Assignment 1 of the D&S core course. <br> Use the navigation bar to discover who we are and the books we recommend.</p> -->
             </div>
           </section>
@@ -44,7 +36,7 @@
             <title></title>
         </head> -->
         <body>
-            <table style="width:80%">
+            <table style="width:100%">
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
@@ -54,44 +46,44 @@
                     <th>MSRP</th>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Unbroken</td>
+                    <td>Laura Hillenbrand</td>
+                    <td>2014</td>
+                    <td>Random House</td>
+                    <td>528</td>
+                    <td>8.00</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Harry Potter & the Sorcerer's Stone</td>
+                    <td>J.K. Rowling</td>
+                    <td>1998</td>
+                    <td>Scholastic</td>
+                    <td>309</td>
+                    <td>6.90</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>To Kill a Mockingbird</td>
+                    <td>Harper Lee</td>
+                    <td>1988</td>
+                    <td>Grand Central Publishing</td>
+                    <td>384</td>
+                    <td>11.50</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>The Very Hungry Caterpillar</td>
+                    <td>Eric Carle</td>
+                    <td>1994</td>
+                    <td>World of Eric Carle</td>
+                    <td>26</td>
+                    <td>5.06</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Goodnight Moon</td>
+                    <td>Margaret Wise Brown</td>
+                    <td>1947</td>
+                    <td>HarperFestival</td>
+                    <td>30</td>
+                    <td>5.36</td>
                 </tr>
             </table>
             <section class="book-page">
@@ -101,17 +93,26 @@
                         <h3>Submit a book rec!</h3>
                         <input type="text" placeholder="Title" required><br>
                         <input type="text" placeholder="Author" required><br>
-                        <input type="text" placeholder="Year Published" required><br>
+                        <input type="number" placeholder="Year Published" required><br>
                         <input type="text" placeholder="Publisher" required><br>
-                        <input type="text" placeholder="Page Count" required><br>
-                        <input type="text" placeholder="MSRP"><br>
+                        <input type="number" placeholder="Page Count" required><br>
+                        <input type="number" placeholder="MSRP in $"><br>
                         <button type="submit" value="Submit" name="submit" class="index-btn">Submit</button>
                       </form>
                     </div>
                     <div class="book-page-col">
-                      <br><br><br><img src="img/books.jpg">
+                      <br><br><br>
+                      <a href="https://nccde.org/ImageRepository/Document?documentID=25042">
+                        <img src="img/books.jpg">
+                    </a>
                     </div>
                 </div>
               </section>
         </body>
+        <footer>
+            <div class="footer">
+            <h6><a href="https://www.mentalfloss.com/article/90686/librarian-creates-fake-patron-keep-books-shelves">Photo Source: https://www.mentalfloss.com/article/90686/librarian-creates-fake-patron-keep-books-shelves</a>
+            </h6>
+            </div>
+        </footer>
     </html>
