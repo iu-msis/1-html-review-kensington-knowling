@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,17 +28,34 @@
         </nav>
       </section>
     <div class="text-box">  <!-- class was "text box"-->
-      <h1>Our homepage</h1>
+      <h1>About Danny Devito!</h1>
       <p>This site is a submission for Assignment 1 of the D&S core course. <br> Use the navigation bar to discover who we are and the books we recommend.</p>
     </div>
-    
-    <!--give relative path, try on a different computer -->
-    <img src="">
-
+    <section class="book-page">
+        <div class="row">
+          <div class="book-page-col">
+              <form class="book-form">
+                <h3>Submit a book rec!</h3>
+                <input type="text" placeholder="Title" required><br>
+                <input type="text" placeholder="Author" required><br>
+                <input type="text" placeholder="Year Published" required><br>
+                <input type="text" placeholder="Publisher" required><br>
+                <input type="text" placeholder="Page Count" required><br>
+                <input type="text" placeholder="MSRP"><br>
+                <button type="submit" value="Submit" name="submit" class="index-btn">Submit</button>
+              </form>
+            </div>
+            <div class="book-page-col">
+              <br><br><br><img src="img/books.jpg">
+            </div>
+        </div>
+      </section>
     <!-- Option 1: Bootstrap Bundle with Popper
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
 
   </body>
 </html>
 
-
+<!--One page shows user information (should be fake), showing name, country or origin, 
+  birthdate, age, email address (clickable `mailto:` link that opens an email browser!), 
+  and a (fake) profile picture of the (fake) user-->
