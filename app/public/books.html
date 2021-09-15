@@ -15,7 +15,9 @@
     
       <body>
       <!-- Navigation Bar -->
-            <section class="header">
+        <!-- example of ID tag for CSS -->
+            <!-- <section id="my_header"> -->
+                <section class="header">
             <nav>
                 <div class="nav-links">
                     <ul>
@@ -30,8 +32,8 @@
                     <!-- <p>This site is a submission for Assignment 1 of the D&S core course. <br> Use the navigation bar to discover who we are and the books we recommend.</p> -->
                 </div>
             </section>
-            <table style="width:100%">
-                <tr>
+            <table style="width:100%" id="taskTable">
+                <tr data-sort-method='none'>
                     <th>Title</th>
                     <th>Author</th>
                     <th>Year Published</th>
@@ -96,13 +98,19 @@
                     </div>
                     <div class="book-page-col">
                       <br><br><br>
-                      <a href="https://nccde.org/ImageRepository/Document?documentID=25042">
+                      <!-- <a href="https://nccde.org/ImageRepository/Document?documentID=25042"> -->
+                    <a href="img/books.jpg" target="new">  
                         <img src="img/books.jpg">
                     </a>
                     </div>
                 </div>
               </section>
-        </body>
+              <script src="js/tablesort.min.js"></script>
+              <script>
+                //  Tablesort plugin from https://tristen.ca/tablesort/demo/
+                new Tablesort(document.getElementById('taskTable'));
+              </script>
+            </body>
         <footer>
             <div class="footer">
             <h6><a href="https://www.mentalfloss.com/article/90686/librarian-creates-fake-patron-keep-books-shelves">Photo Source: https://www.mentalfloss.com/article/90686/librarian-creates-fake-patron-keep-books-shelves</a>
