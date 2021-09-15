@@ -1,0 +1,192 @@
+#homepage-banner{
+  font-color: rgb(21, 41, 33)
+
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    min-height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+#my_header {
+  min-height: 30vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+  /* navigation menu */
+nav {
+    display: flex;
+    padding: 2% 6%;
+    min-height: 25vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(211, 240, 240);
+  }
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+.nav-links ul li a{
+    color: rgb(0,0,0);
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+
+/* book & bio page spacing */
+  .book-page{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .book-page-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+  .book-page-col img{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover; */
+  }
+
+
+  /* book form */
+  .book-form{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+  }
+  .book-form h3{
+    text-align: left;
+  }
+  .book-form input, .book-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+  }
+  .book-form .index-btn{
+    background: #b1dada;
+    margin: 10px 0;
+  }
+
+  /* table spacing */
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    position: center;
+  }
+  
+  td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+  }
+
+  /* site title */
+.text-box{
+    width:90%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text-box h1{
+    font-size: 62px;
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+  }
+
+#text-box{
+    width:90%;
+    color: rgb(122, 87, 87);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+#text-box h1{
+    font-size: 62px;
+  }
+#text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* citations */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: black
+  }
+.footer h6{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+
+  /* Table Sort */
+  th[role=columnheader]:not(.no-sort) {
+    cursor: pointer;
+  }
+  
+  th[role=columnheader]:not(.no-sort):after {
+    content: '';
+    float: right;
+    margin-top: 7px;
+    border-width: 0 4px 4px;
+    border-style: solid;
+    border-color: #404040 transparent;
+    visibility: hidden;
+    opacity: 0;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  th[aria-sort=ascending]:not(.no-sort):after {
+    border-bottom: none;
+    border-width: 4px 4px 0;
+  }
+  
+  th[aria-sort]:not(.no-sort):after {
+    visibility: visible;
+    opacity: 0.4;
+  }
+  
+  th[role=columnheader]:not(.no-sort):hover:after {
+    visibility: visible;
+    opacity: 1;
+  }
