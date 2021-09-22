@@ -8,10 +8,16 @@
 
 
     <title>D&S Assignment 1</title>
-    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/site.css" type="text/css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Homework #3!</title>
+
+    <!-- Vue JS -->
+    <script src="https://unpkg.com/vue@next"></script>
+
   </head>
 
   <body>
@@ -28,25 +34,25 @@
         </nav>
       </section>
     <div class="text-box">
-      <h1>About Danny Devito!</h1>
+      <h1>About:</h1>
       <!-- <p>We love. <br> Use the navigation bar to discover who we are and the books we recommend.</p> -->
     </div>
-    <section class="book-page">
+    <section class="book-page" id="someApp">
         <div class="row">
           <div class="book-page-col">
               <div class="book-form">
-                  <h3>Learn more about Danny Devito:</h3>
-                  <h4>Daniel Michael DeVito Jr. was born in Neptune Township, New Jersey, U.S. on November 17th 1944. This makes him 76 years old (pictured right).</h4>
+                  <h3>Learn more about {{ result.name.first }} {{ result.name.last }}:</h3>
+                  <h4>{{ result.name.first }} {{ result.name.last }} was born in {{ result.location.country }} on {{ prettyBirthday }}. This makes {{ result.name.first }} {{ result.dob.age }} years old (pictured right).</h4>
                   <br>
-                  <h4>To contact Danny, email him at: danny.devito@fakeemail.com:</h4>
-                  <a href="mailto:danny.devito@fakeemail.com">Send Email</a>
+                  <h4>To contact, email: {{ result.email }}</h4>
+                  <a v-bind:href="'mailto:' + result.email">Send Email</a>
               </div>
             </div>
             <div class="book-page-col">
               <br><br><br>
                 <!-- <a href="https://cdn.costumewall.com/wp-content/uploads/2018/09/ongo-gablogian.jpg"> -->
-                <a href="img/profile.jpg" target="new">  
-                  <img src="img/profile.jpg">
+                <a v-bind:href="result.picture.large" target="new">  
+                  <img v-bind:src="result.picture.large">
                 </a>
             </div>
         </div>
@@ -59,6 +65,14 @@
         </h6>
         </div>
         </footer>
+
+        <!--  Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+
+        <script src="js/index.js"></script>
+
     </body>
 </html>
 
