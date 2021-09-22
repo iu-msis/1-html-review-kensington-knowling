@@ -41,7 +41,10 @@
         <div class="row">
           <div class="book-page-col">
               <div class="book-form">
-                  <h3>Learn more about {{ result.name.first }} {{ result.name.last }}:</h3>
+                <form v-on:submit.prevent="fetchUserData">
+                  <button type="submit">Refresh</button>
+                </form>
+                  <h3> Learn more about {{ result.name.first }} {{ result.name.last }}:</h3>
                   <h4>{{ result.name.first }} {{ result.name.last }} was born in {{ result.location.country }} on {{ prettyBirthday }}. This makes {{ result.name.first }} {{ result.dob.age }} years old (pictured right).</h4>
                   <br>
                   <h4>To contact, email: {{ result.email }}</h4>
